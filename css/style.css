@@ -117,15 +117,45 @@ contrast(200%);
     margin-top: 50px;
     font-size: 14px;
 }
-/* About Page Styles */
+/* About Page Background */
+.about-page {
+    background: linear-gradient(135deg, #e8f6f3, #ffffff);
+    padding: 40px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container */
 .about-page .about-container {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     text-align: center;
+    transition: 0.4s ease;
+}
+
+.about-page .about-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Page Title Section */
+.about-page .page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-page h1.page-heading {
+    display: inline-block;
+    padding: 12px 35px;
+    background: linear-gradient(135deg, #16a085, #1abc9c);
+    color: white;
+    border-radius: 50px;
+    margin: 20px auto;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(22,160,133,0.3);
 }
 
 /* Headings */
@@ -136,64 +166,80 @@ contrast(200%);
 }
 
 .about-page .about-container h2 {
-    margin-top: 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
     color: #16a085;
+    position: relative;
+    display: inline-block;
 }
 
-/* Paragraph */
+.about-page .about-container h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #16a085;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+/* Paragraph Styling */
 .about-page .about-container p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #555;
+    margin-bottom: 15px;
 }
 
-/* List */
+/* List Styling */
 .about-page .about-container ul {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .about-page .about-container ul li {
-    background-color: #f2f7f7;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #f2f7f7, #ffffff);
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
     font-size: 17px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* Hover Effect on List */
 .about-page .about-container ul li:hover {
-    background-color: #16a085;
+    background: linear-gradient(135deg, #16a085, #1abc9c);
     color: white;
     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(22,160,133,0.3);
 }
 
-/* Product Container (if any) */
+/* ===== Product Container ===== */
 .about-page .product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    margin-top: 30px;
 }
-/* Page Title Styling */
-.about-page .page-title {
-    text-align: center;
-    margin: 30px 0;
+
+/* ===== Smooth Fade Animation ===== */
+.about-page .about-container {
+    animation: fadeIn 0.8s ease-in-out;
 }
-.about-page h1.page-heading {
-    text-align: center;
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #16a085;
-    color: white;
-    border-radius: 30px;
-    margin: 20px auto;   
-}
-/* Body default for About Page */
-.about-page body {
-    text-align: center;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Products Page Styles */
@@ -519,5 +565,6 @@ contrast(200%);
         width: 30%;
     }  
 }
+
 
 
