@@ -27,6 +27,10 @@ body {
     margin: 0;
     padding: 40px 20px;
 }
+.logopro {
+   filter :grayscale(100%)
+contrast(200%);
+}
 
 /* Header */
 .home-page header {
@@ -446,3 +450,4 @@ body {
         width: 30%;
     }  
 }
+
