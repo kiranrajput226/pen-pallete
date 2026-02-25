@@ -24,6 +24,14 @@ body{
     margin:0 auto;
 }
 
+section {
+    padding:  10px 20px;
+}
+
+section:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
 /* HEADER */
 .home-page header{
     background:#25343F;
@@ -268,6 +276,7 @@ body{
     border-radius:12px;
     box-shadow:0 10px 30px rgba(0,0,0,0.2);
     margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .terms-container h1{
@@ -579,3 +588,4 @@ footer{
         padding:5px 8px;
     }
 }  
+
