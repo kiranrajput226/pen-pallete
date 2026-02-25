@@ -86,7 +86,7 @@ section:nth-child(even) {
 
 .hero-section{
     position:relative;
-    height:calc(100dvh - 70px); 
+    height:100vh; 
     overflow:hidden;
 }
 
@@ -588,4 +588,5 @@ footer{
     }
 
 }
+
 
