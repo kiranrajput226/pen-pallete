@@ -446,25 +446,11 @@ footer{
         width: 90%;
         height:250px;
     }
-    .hero-section{
-        height: auto;
-    }
     .heroImg img{
-        width: 100%;
-        height:auto;
-        object-fit: contain;
-    }
-    .herotext{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-
+        object-fit: cover;
+        object-position: center;
     }
 }
-
-
 /* ================= MOBILE ================= */
 @media (max-width:576px){
 
@@ -601,6 +587,7 @@ footer{
     }
 
 }
+
 
 
 
