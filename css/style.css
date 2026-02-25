@@ -446,7 +446,9 @@ footer{
         width: 90%;
         height:250px;
     }
-
+    .heroImg img{
+        object-fit: contain;
+    }
 }
 
 
@@ -586,3 +588,4 @@ footer{
     }
 
 }
+
