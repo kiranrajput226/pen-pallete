@@ -431,7 +431,7 @@ footer{
     background:#25343F;
     color:#EAEFEF;
     text-align:center;
-    padding:40px;
+    padding:20px;
     position:relative;
     letter-spacing:1px;
     font-size:15px;
@@ -588,4 +588,5 @@ footer{
         padding:5px 8px;
     }
 }  
+
 
