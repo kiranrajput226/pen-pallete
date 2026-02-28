@@ -264,7 +264,7 @@ section:nth-child(even) {
     background:linear-gradient(135deg,#4e73df,#1cc88a);
     min-height:100vh;
     display:flex;
-    align-items:flex-start;
+    align-items:center;
     justify-content:center;
     padding: 40px 30px;
 }
@@ -587,6 +587,7 @@ footer{
     }
 
 }
+
 
 
 
