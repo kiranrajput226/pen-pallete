@@ -318,7 +318,7 @@ section:nth-child(even) {
 
 .map,
 .contact-info{
-    flex:0 0 42%;
+    flex:0 0 38%;
     margin: 0;
     min-width:0;
     text-align:left;
@@ -581,3 +581,4 @@ footer{
     }
 
 }
+
